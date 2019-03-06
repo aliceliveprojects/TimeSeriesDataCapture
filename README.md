@@ -92,6 +92,59 @@ db.createCollection("runsCollection",{capped:false}); db.createCollection("tagsC
 
 *for more information of the starting database template see [mongodb-database-template.md](https://github.com/CMDT/TimeSeriesDataCapture/blob/master/Documents/mongodb-database-template.md)*
 
+## OneDrive Application Setup
+To setup OneDrive application
+
+### Prerequisites
+A OneDrive Developer account is needed
+
+### Creating Application
+
+1. Navigate to Microsoft Graph :  <https://developer.microsoft.com/en-us/graph/>
+2. Click the My Apps login, located on the top bar when not signed in.
+3. Microsoft will prompt for a login
+4. Once logged in, click the Add An App button
+5. Name the application and create
+
+
+### Filling Application Details
+
+Within a specific application : 
+
+1. Take note of the Application Id (also known as Client Id)
+2. Under Platforms click the Add Platform button
+3. Choose the Web Option
+4. Check the Allow Implicit Flow checkbox
+5. Under Redirect URLs enter the applications callback, example [application_domain]/callback.html
+6. Under Microsoft Graph Permissions , remove any default permissions
+7. Add the Sites.Read.All Application Permission (not Delegated Permissions)
+
+## Auth0
+The single page web application (SPWA) uses Auth0 for authentication. 
+
+### Prerequisites
+
+#### Auth0 Account 
+To use authentication first a Auth0 account is needed, sign up to [Auth0](https://auth0.com/signup)
+
+### Setup 
+The SPWA uses Auth0 *SINGLE PAGE APPLICATION* application type.
+
+#### Create Single Page Application
+On the Auth0 dashboard under the Applications section create a new application, picking the Single Page Web Applications application type.
+
+Under settings for the newly created application add the domain of the SPWA within the Allowed Callbacks URLs, Allowed Web Origins and Allowed Origins text areas.
+
+
+*If the domain of the application is not known the text areas can be filled later*
+
+*Under Advanced Setting, under Endpoints take note of the OAuth Endpoints, these will be used for the Browse API*
+
+#### Create Machine To Machine API
+On the Auth0 dashboard under the API section create a new API.
+
+*Take note of the API Audience*
+
 ## Dataformats
 When importing runs from the OneDrive into the database the runs must be in an exact format.
 
@@ -100,7 +153,7 @@ When importing runs from the OneDrive into the database the runs must be in an e
 ```
 <date-time>/
 -----------T-Data/
------------------Temperature_Log.csv
+-----------------data.txt
 -----------Remarks/
 -------------------Remark01.txt
 ```
@@ -110,29 +163,9 @@ When importing runs from the OneDrive into the database the runs must be in an e
 - Temperature_Log must be a csv file dimilited by a space, with a minimum of two columns. Line 1 must be column names, line 2 must be column units
 - Remarks must be a txt file. Line 1 must be **Remark added after < seconds > seconds** where < seconds > is the remarks position. Line 2 must be the remark discription.
 
-*see [example](https://github.com/aliceliveprojects/TimeSeriesDataCapture/tree/master/Documents/example%20data) dataformat*
-
-## Auth0
-The single page web application (SPWA) uses Auth0 for authentication. 
-
-### Prerequisites
-
-#### Auth0 Account 
-To use authentication first a Auht0 account is needed, sign up to [Auth0](https://auth0.com/signup)
-
-### Setup 
-The SPWA uses Auth0 *SINGLE PAGE APPLICATION* application type.
-
-#### Create Single Page Application
-One the Auth0 dashboard under the Applications section create a new application, picking the Single Page Web Applications application type.
-
-Under settings for the newly created application add the domain of the SPWA within the Allowed Callbacks URLs, Allowed Web Origins and Allowed Origins text areas.
+*see [example](https://github.com/CMDT/TimeSeriesDataCapture/tree/master/Documents/example%20data) dataformat*
 
 
-
-*If the domain of the application is not known the text areas can be filled later*
-
-*Under Advanced Setting, under Endpoints take note of the OAuth Endpoints, these will be used for the Browse API*
 
 ---
 
