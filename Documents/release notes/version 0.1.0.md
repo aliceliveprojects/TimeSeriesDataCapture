@@ -2,7 +2,7 @@
 
 **GitHub Issues** https://github.com/CMDT/TimeSeriesDataCapture/issues
 
-**Single Page Web App** https://timeseriesdatacapture-spwa.herokuapp.com/#!/home/
+**Single Page Web App** https://alicetimeseriesdatacapturespwa.herokuapp.com/#!/home/
 
 ## Version 0.1 Implemented Features
 
