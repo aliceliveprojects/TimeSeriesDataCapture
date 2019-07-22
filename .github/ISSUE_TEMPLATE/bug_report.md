@@ -7,14 +7,6 @@ assignees: ''
 
 ---
 
-<!-- Before submitting an issue, please consult our docs (https://ionicframework.com/docs/) and API reference (https://ionicframework.com/docs/api/) -->
-
-<!-- Please make sure you are posting an issue pertaining to the Ionic Framework. If you are having an issue with the Ionic Appflow services (Ionic View, Ionic Deploy, etc.) please consult the Ionic Appflow support portal (https://ionic.zendesk.com/hc/en-us) -->
-
-<!-- Please do not submit support requests or "How to" questions here. Instead, please use one of these channels: https://forum.ionicframework.com/ or http://ionicworldwide.herokuapp.com/ -->
-
-<!-- ISSUES MISSING IMPORTANT INFORMATION MAY BE CLOSED WITHOUT INVESTIGATION. -->
-
 **Browser Version:**
 
 
@@ -28,6 +20,7 @@ assignees: ''
 <!--  Please explain the steps required to duplicate the issue, especially if you are able to provide a sample application. -->
 
 **Related code:**
+<!--  Add any related code here. -->
 
 ```
 insert short code snippets here
