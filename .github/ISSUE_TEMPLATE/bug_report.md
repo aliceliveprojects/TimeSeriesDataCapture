@@ -10,10 +10,10 @@ assignees: ''
 **Browser Version:**
 
 
-**Current behavior:**
+**Current behaviour:**
 <!-- Describe how the bug manifests. -->
 
-**Expected behavior:**
+**Expected behaviour:**
 <!-- Describe what the behavior would be without the bug. -->
 
 **Steps to reproduce:**
