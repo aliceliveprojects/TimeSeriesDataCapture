@@ -123,7 +123,7 @@ A OneDrive Developer account is needed
 6. ~~Under Microsoft Graph Permissions , remove any default permissions~~
 7. ~~Add the Sites.Read.All Application Permission (not Delegated Permissions)~~
 
-> Microsoft has migrated their One Drive API to the Azure Portal so the previous way of working for Creating an application has been deprecated, follow the new set of instructions [here]() 
+> Microsoft has migrated their One Drive API to the Azure Portal so the previous way of working for creating an application has been deprecated, follow the new set of instructions [here](https://github.com/aliceliveprojects/little_one_drive_app#creating-developer-account-and-registering-application) 
 
 ## Auth0
 The single page web application (SPWA) uses Auth0 for authentication. 
