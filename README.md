@@ -7,7 +7,6 @@ Here is the original [briefing note](https://github.com/CMDT/TimeSeriesDataCaptu
 
 This is the AliceLiveProjects fork of the application. You can find credentials in the Alice Repo [here](https://github.com/CMDT/DigitalLabs_TeachingProjects/blob/master/docs/accounts/alice/accounts.md) (private)
 
-
 ---
 
 # Sub Projects
@@ -19,14 +18,14 @@ This is the AliceLiveProjects fork of the application. You can find credentials 
 
 [Credentials (Private)](https://github.com/CMDT/DigitalLabs_TeachingProjects/blob/master/docs/accounts/alice/accounts.md)
 
-  
+
 # Trello
 [Trello Team](https://trello.com/timeseriesdatacapture)   
 [Parent Trello Board](https://trello.com/b/0pc2DUBy/overview)
 
  # Wireframes
  [Github Pages](https://aliceliveprojects.github.io/TimeSeriesDataCapture/wireframes)
- 
+
  [On the Repo](https://github.com/aliceliveprojects/TimeSeriesDataCapture/tree/master/docs/wireframes)
 
 
@@ -101,26 +100,30 @@ To setup OneDrive application
 ### Prerequisites
 A OneDrive Developer account is needed
 
-### Creating Application
+### ~~Creating Application~~
 
-1. Navigate to Microsoft Graph :  <https://developer.microsoft.com/en-us/graph/>
-2. Click the My Apps login, located on the top bar when not signed in.
-3. Microsoft will prompt for a login
-4. Once logged in, click the Add An App button
-5. Name the application and create
+1. ~~Navigate to Microsoft Graph :  https://developer.microsoft.com/en-us/graph/~~
+2. ~~Click the My Apps login, located on the top bar when not signed in.~~
+3. ~~Microsoft will prompt for a login~~
+4. ~~Once logged in, click the Add An App button~~
+5. ~~Name the application and create~~
 
 
-### Filling Application Details
 
-Within a specific application : 
 
-1. Take note of the Application Id (also known as Client Id)
-2. Under Platforms click the Add Platform button
-3. Choose the Web Option
-4. Check the Allow Implicit Flow checkbox
-5. Under Redirect URLs enter the applications callback, example [application_domain]/callback.html
-6. Under Microsoft Graph Permissions , remove any default permissions
-7. Add the Sites.Read.All Application Permission (not Delegated Permissions)
+### ~~Filling Application Details~~
+
+~~Within a specific application :~~ 
+
+1. ~~Take note of the Application Id (also known as Client Id)~~
+2. ~~Under Platforms click the Add Platform button~~
+3. ~~Choose the Web Option~~
+4. ~~Check the Allow Implicit Flow checkbox~~
+5. ~~Under Redirect URLs enter the applications callback, example [application_domain]/callback.html~~
+6. ~~Under Microsoft Graph Permissions , remove any default permissions~~
+7. ~~Add the Sites.Read.All Application Permission (not Delegated Permissions)~~
+
+> Microsoft has migrated their One Drive API to the Azure Portal so the previous way of working for Creating an application has been deprecated, follow the new set of instructions [here]() 
 
 ## Auth0
 The single page web application (SPWA) uses Auth0 for authentication. 
@@ -177,7 +180,7 @@ The single page web application (SPWA) has two user types casual and admin both,
 
 ## Casual user
 The casual user is user who is not logged in thus admin controls are disabled. 
- 
+
 ### Prerequisites
 - none
 
@@ -236,7 +239,6 @@ One the Column Tag panel switch to view tags. Click the pencil icon to edit the 
 #### Importing Runs
 To import runs from a OneDrive account, click the import button. If not already logged in click the login button to login into OneDrive. To preview a run click the graph preview button, to import runs select the checkboxes and click confirm.
 
-
 ---
 
 This project was funded via the [Marloes Peeters Research Group](https://www.marloespeeters.nl/) and mentored by [DigitalLabs@MMU](https://digitallabs.mmu.ac.uk/) as a [DigitalLabs Summer Project](https://digitallabs.mmu.ac.uk/what-we-do/teaching/). It is the work of [Yusof Bandar](https://github.com/YusofBandar).
@@ -246,8 +248,7 @@ This project was funded via the [Marloes Peeters Research Group](https://www.mar
 <img align="middle" src="https://trello-attachments.s3.amazonaws.com/5b2caa657bcf194b4d089d48/5b98c7ec64145155e09b5083/d2e189709d3b79aa1222ef6e9b1f3735/DigitalLabsLogo_512x512.png"  />
  </p>
  
- 
+
 <p align="center">
 <img align="middle" src="https://trello-attachments.s3.amazonaws.com/5b2caa657bcf194b4d089d48/5b98c7ec64145155e09b5083/e5f47675f420face27488d4e5330a48c/logo_mmu.png" />
  </p>
-
